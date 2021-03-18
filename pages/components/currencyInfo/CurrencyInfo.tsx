@@ -14,6 +14,39 @@ export default function CryptoList(){
                                 </div>
                         </div>
                 </div>
+                <div className={styles.infoGrid}>
+                    <div className={styles.infoGrid_row}>
+                        <div className={styles.gridBox}>
+                            <p className={styles.gridBoxHead}>MARKET VALUE</p>
+                            <p className={styles.gridBoxSecondary}>$131.16</p>
+                        </div>
+                        <div className={styles.gridBox}>
+                            <p className={styles.gridBoxHead}>HOLDINGS</p>
+                            <p className={styles.gridBoxSecondary}>$131.16</p>
+                        </div>
+                    </div>
+                    <div className={styles.infoGrid_row}>
+                        <div className={styles.gridBox}>
+                            <p className={styles.gridBoxHead}>MARKET VALUE</p>
+                            <p className={styles.gridBoxSecondary}>$131.16</p>
+                        </div>
+                        <div className={styles.gridBox}>
+                            <p className={styles.gridBoxHead}>HOLDINGS</p>
+                            <p className={styles.gridBoxSecondary}>$131.16</p>
+                        </div>
+                    </div>
+                    <div className={styles.infoGrid_row}>
+                        <div className={styles.gridBox}>
+                            <p className={styles.gridBoxHead}>MARKET VALUE</p>
+                            <p className={styles.gridBoxSecondary}>$131.16</p>
+                        </div>
+                        <div className={styles.gridBox}>
+                            <p className={styles.gridBoxHead}>HOLDINGS</p>
+                            <p className={styles.gridBoxSecondary}>$131.16</p>
+                        </div>
+                    </div>
+                </div>
+
         </div>
     )
 }
