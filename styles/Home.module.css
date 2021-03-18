@@ -9,8 +9,14 @@
   background-color: red;
   display: flex;
 }
-.leftSide {
-  width: 25%;
+.leftSide,
+.rightSide {
+  width: 22%;
+  height: 100%;
+  border: 2px solid blue;
+}
+.middleSection {
+  width: 56%;
   height: 100%;
   border: 2px solid blue;
 }

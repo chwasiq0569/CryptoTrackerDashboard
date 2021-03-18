@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+
 .outerContainer {
   width: 100%;
   height: 100%;
@@ -6,12 +10,66 @@
 .individualCurrency {
   width: 100%;
   height: 5rem;
-  border: 2px solid red;
   display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  cursor: pointer;
 }
 .individualCurrency .leftSide,
 .individualCurrency .rightSide {
   width: 50%;
   height: 100%;
-  border: 2px solid white;
+  display: flex;
+  align-items: center;
+}
+.individualCurrency .rightSide {
+  justify-content: center;
+  /* justify-content: flex-end; */
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.individualCurrency .leftSide .iconContainer {
+  width: 2.75rem;
+  height: 2.75rem;
+  /* border: 2px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.currencyName,
+.price,
+.percentage {
+  /* color: white; */
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+.currencyName {
+  margin-left: 0.5rem;
+}
+.currencyName,
+.price {
+  color: #8b88a0;
+}
+.percentage {
+  color: #f23939;
+}
+.individualCurrency .leftSide .iconContainer Image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.coinBtn {
+  width: 3rem;
+  height: 3rem;
+  border: 3px solid blue;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
 }
