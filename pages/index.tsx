@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import CryptoList from './components/cryptoList/CryptoList';
+import CurrencyInfo from './components/currencyInfo/CurrencyInfo';
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
           Middle
         </div>
         <div className={styles.rightSide}>
-          Right
+          <CurrencyInfo />
         </div>
       </div>
     </div>
