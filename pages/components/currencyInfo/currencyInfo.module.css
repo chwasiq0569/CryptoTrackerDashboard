@@ -3,14 +3,40 @@
   height: 100%;
   background-color: #252233;
 }
-.CurrencyInto {
+.CurrencyInfo {
   width: 100%;
   height: 8rem;
   display: flex;
   justify-content: space-between;
 }
-.CurrencyInto__leftSide,
-.CurrencyInto__rightSide {
+.CurrencyInfo__leftSide,
+.CurrencyInfo__rightSide {
   width: 50%;
   height: 100%;
+  display: flex;
+  align-items: flex-start;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.CurrencyInfo__leftSide {
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+.CurrencyInfo__rightSide {
+  justify-content: flex-end;
+}
+.CurrencyInfo__rightSide .imageContainer {
+  width: 7.8rem;
+  height: 7.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.CurrencyInfo__rightSide .imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
