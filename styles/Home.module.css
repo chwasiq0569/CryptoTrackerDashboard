@@ -5,7 +5,6 @@
 .innerWrapper {
   width: 100%;
   height: 100%;
-  border: 2px solid red;
   background-color: red;
   display: flex;
 }
@@ -13,12 +12,10 @@
 .rightSide {
   width: 22%;
   height: 100%;
-  border: 2px solid blue;
 }
 .middleSection {
   width: 56%;
   height: 100%;
-  border: 2px solid blue;
 }
 /* .container {
   min-height: 100vh;
