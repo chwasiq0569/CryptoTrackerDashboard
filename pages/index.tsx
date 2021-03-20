@@ -18,7 +18,7 @@ export default function Home({ result }) {
           Middle
         </div>
         <div className={styles.rightSide}>
-          <CurrencyInfo />
+          <CurrencyInfo coin={coin} />
         </div>
       </div>
     </div>
