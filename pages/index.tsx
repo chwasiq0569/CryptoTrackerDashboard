@@ -2,14 +2,17 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import CryptoList from './components/cryptoList/CryptoList';
 import CurrencyInfo from './components/currencyInfo/CurrencyInfo';
+import React, { useState } from 'react';
 
 export default function Home({ result }) {
-  console.log(result)
+
+  const [coin, setCoin] = useState("");
+  console.log("COIN: ", coin)
   return (
     <div className={styles.outerWrapper}>
       <div className={styles.innerWrapper}>
         <div className={styles.leftSide}>
-          <CryptoList currencyList={result} />
+          <CryptoList setCoin={setCoin} currencyList={result} />
         </div>
         <div className={styles.middleSection}>
           Middle

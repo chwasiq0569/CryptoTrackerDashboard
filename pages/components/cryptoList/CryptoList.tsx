@@ -3,14 +3,14 @@ import Image from 'next/image';
 
 // const Icon = require('../../../assets/bitcoin_PNG48.png);
 
-export default function CryptoList({ currencyList }){
+export default function CryptoList({ currencyList, setCoin}){
     console.log("CURRENCY LIST: ", currencyList)
     return (
         <div className={styles.outerContainer}>
           <div className={styles.currencyListContainer}>
                 {
                     currencyList.map(coin => (
-                        <div className={styles.individualCurrency}>
+                        <div key={coin.id} onClick={() => setCoin(coin)} className={styles.individualCurrency}>
                         <div className={styles.leftSide}>
                             <div className={styles.iconContainer}>
                                 <img src={coin?.image} alt={coin.name} width="100%" height="100%" />
