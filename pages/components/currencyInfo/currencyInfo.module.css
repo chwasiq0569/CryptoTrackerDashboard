@@ -36,7 +36,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(139, 136, 160, 0.15);
+  background-color: rgba(139, 136, 160, 0.1);
   border-radius: 3rem;
 }
 .CurrencyInfo__rightSide .imageContainer img {
@@ -65,7 +65,7 @@
   font-family: "Poppins", sans-serif;
 }
 .gridBoxHead {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: #8b88a0;
   letter-spacing: 0.5px;
   font-weight: 500;

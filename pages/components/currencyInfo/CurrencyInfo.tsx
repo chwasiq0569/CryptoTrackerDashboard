@@ -17,32 +17,32 @@ export default function CryptoList({coin}){
                 <div className={styles.infoGrid}>
                     <div className={styles.infoGrid_row}>
                         <div className={styles.gridBox}>
-                            <p className={styles.gridBoxHead}>MARKET VALUE</p>
-                            <p className={styles.gridBoxSecondary}>$131.16</p>
+                            <p className={styles.gridBoxHead}>CURRENT PRICE</p>
+                            <p className={styles.gridBoxSecondary}>${coin.current_price}</p>
                         </div>
                         <div className={styles.gridBox}>
-                            <p className={styles.gridBoxHead}>HOLDINGS</p>
-                            <p className={styles.gridBoxSecondary}>$131.16</p>
-                        </div>
-                    </div>
-                    <div className={styles.infoGrid_row}>
-                        <div className={styles.gridBox}>
-                            <p className={styles.gridBoxHead}>MARKET VALUE</p>
-                            <p className={styles.gridBoxSecondary}>$131.16</p>
-                        </div>
-                        <div className={styles.gridBox}>
-                            <p className={styles.gridBoxHead}>HOLDINGS</p>
-                            <p className={styles.gridBoxSecondary}>$131.16</p>
+                            <p className={styles.gridBoxHead}>MARKET CAP</p>
+                            <p className={styles.gridBoxSecondary}>${coin.market_cap}</p>
                         </div>
                     </div>
                     <div className={styles.infoGrid_row}>
                         <div className={styles.gridBox}>
-                            <p className={styles.gridBoxHead}>MARKET VALUE</p>
-                            <p className={styles.gridBoxSecondary}>$131.16</p>
+                            <p className={styles.gridBoxHead}>ALT</p>
+                            <p className={styles.gridBoxSecondary}>{coin.atl}</p>
                         </div>
                         <div className={styles.gridBox}>
-                            <p className={styles.gridBoxHead}>HOLDINGS</p>
-                            <p className={styles.gridBoxSecondary}>$131.16</p>
+                            <p className={styles.gridBoxHead}>ALT CHANGE %</p>
+                            <p className={styles.gridBoxSecondary}>{coin.atl_change_percentage}%</p>
+                        </div>
+                    </div>
+                    <div className={styles.infoGrid_row}>
+                        <div className={styles.gridBox}>
+                            <p className={styles.gridBoxHead}>ATH</p>
+                            <p className={styles.gridBoxSecondary}>{coin.ath}</p>
+                        </div>
+                        <div className={styles.gridBox}>
+                            <p className={styles.gridBoxHead}>ATH CHANGE %</p>
+                            <p className={styles.gridBoxSecondary}>{coin.ath_change_percentage}%</p>
                         </div>
                     </div>
                 </div>
