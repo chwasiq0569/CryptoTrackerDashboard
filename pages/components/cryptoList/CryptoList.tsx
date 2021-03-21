@@ -4,7 +4,6 @@ import Image from 'next/image';
 // const Icon = require('../../../assets/bitcoin_PNG48.png);
 
 export default function CryptoList({ currencyList, setCoin}){
-    console.log("CURRENCY LIST: ", currencyList)
     return (
         <div className={styles.outerContainer}>
           <div className={styles.currencyListContainer}>

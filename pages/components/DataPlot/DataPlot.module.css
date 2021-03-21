@@ -1,0 +1,68 @@
+.dataPlot_Wrapper{
+    width: 100%;
+    height: 100%;
+    border: 4px solid blue;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.coinDetail{
+    width: 100%;
+    height: 4rem;
+    /* border: 2px solid red; */
+    display: flex;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-bottom: 3px solid #37344b;
+    padding-bottom: 1rem;
+}
+.coinDetail .coinPrice{
+    font-size: 2.75rem;
+    color: white;
+    font-weight: 500;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.percentageChange{
+      width: 70%;
+    height: 100%;
+    margin-left: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.badge{
+    width: 4.5rem;
+    height: 50%;
+    color: white;
+    background-color: #f23939;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem;
+}
+.Btns{
+    width: 13rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Btn{
+    width: 6rem;
+    height: 90%;
+    border: 3px solid #37344b;
+    color: #8b88a0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    font-size: 0.85rem;
+}
