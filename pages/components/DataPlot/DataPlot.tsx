@@ -131,7 +131,17 @@ const options = {
         </div>
 
       <Radar data={data} height={250} options={options} />
-      
+      <div className={styles.historyTimeContainer}>
+           <div className={styles.historyTime}>
+               1D
+           </div> 
+           <div className={styles.historyTime}>
+               14D
+           </div> 
+           <div className={styles.historyTime}>
+               30D
+           </div> 
+      </div>
     </div>
   );
 };
