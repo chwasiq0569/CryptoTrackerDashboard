@@ -16,6 +16,7 @@
     padding-right: 3rem;
     border-bottom: 3px solid #37344b;
     padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 .coinDetail .coinPrice{
     font-size: 2.75rem;
@@ -65,4 +66,29 @@
     align-items: center;
     border-radius: 1.5rem;
     font-size: 0.85rem;
+}
+.historyTimeContainer{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.historyTime{
+    width: 3.5rem;
+    height: 2rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    color: white;
+}
+.active{
+
+    background-color: white;
+    color: black;
 }
