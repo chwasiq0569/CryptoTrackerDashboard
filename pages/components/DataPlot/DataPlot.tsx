@@ -6,9 +6,25 @@ const DataPlot = ( { coin } ) => {
       const [labelsArr, setLabelsArr] = React.useState([]);
       const [dataArrOne, setDataArrOne] = React.useState([]);
       const [dataArrTwo, setDataArrTwo] = React.useState([]);
+      const [historyPeriod, setHistoryPeriod] = React.useState(["1D", "14D", "30D"]);
+      const [selectedPeriod, setSelectedPeriod] = React.useState("14D");
+ 
+    function userToClass(user = "14D") {
+        var userClass = "";
+        // console.log(selectedCountry);
+        if (user === selectedPeriod) {
+          userClass = styles.active
+        } else {
+          userClass = styles.historyTime;
+        }
+        return userClass;
+  }
+
+
+ 
 
       const fetchData = async () => {
-          const response = await fetch(`https://api.coingecko.com/api/v3/coins/${coin.id}/market_chart?vs_currency=usd&days=1`);
+          const response = await fetch(`https://api.coingecko.com/api/v3/coins/${coin.id}/market_chart?vs_currency=usd&days=${selectedPeriod}`);
           const coinHistory = await response.json();
           console.log("CHART DATA", coinHistory)
         // let count = 0;
@@ -35,51 +51,8 @@ const DataPlot = ( { coin } ) => {
                                      }
     React.useEffect(() => {
         fetchData();
-    }, [coin])
-//   const [labelsArr, setLabelsArr] = React.useState([]);
-//   const [dataArrOne, setDataArrOne] = React.useState([]);
-//   const [dataArrTwo, setDataArrTwo] = React.useState([]);
-//   React.useEffect(() => {
+    }, [coin, selectedPeriod])
 
-//     });
-//     setLabelsArr([...labelsArray]);
-//     setDataArrOne([...dataArrayOne]);
-//     setDataArrTwo([...dataArrayTwo]);
-//   }, []);
-
-//   const options = {
-//     legend: {
-//       display: true,
-//     },
-//     elements: {
-//       point: {
-//         radius: 0,
-//       },
-//     },
-//     maintainAspectRatio: false,
-//     tooltips: {
-//       mode: "index",
-//       intersect: false,
-//     },
-//     scales: {
-//       // xAxes: [
-//       //     {
-//       //     type: "time",
-//       //     time: {
-//       //         parser: "MM/DD/YY",
-//       //         tooltipFormat: "ll",
-//       //     },
-//       //     },
-//       // ],
-//       yAxes: [
-//         {
-//           gridLines: {
-//             display: false,
-//           },
-//         },
-//       ],
-//     },
-//   };
 const options = {
     scale: {
         angleLines: {
@@ -114,11 +87,12 @@ const options = {
         <div className={styles.coinDetail}>
             <div className={styles.coinPrice}>
                 <p>${coin.current_price}</p>
-            </div>
-            <div className={styles.percentageChange}>
                 <div className={styles.badge}>
                     <p>{coin.price_change_percentage_24h}%</p>
                 </div>
+            </div>
+            <div className={styles.percentageChange}>
+                
                  <div className={styles.Btns}>
                     <div className={styles.Btn}>
                         <p>Unwatch</p>
@@ -132,15 +106,13 @@ const options = {
 
       <Radar data={data} height={250} options={options} />
       <div className={styles.historyTimeContainer}>
-           <div className={styles.historyTime}>
-               <p>1D</p>
-           </div> 
-           <div className={`${styles.historyTime} ${styles.active}`}>
-               <p>14D</p>
-           </div> 
-           <div className={styles.historyTime}>
-               <p>30D</p>
-           </div> 
+        {
+          historyPeriod.map((period, i) => (
+                <div key={i} onClick={() => setSelectedPeriod(period)} className={`${userToClass(period)}`}>
+                     <p>{period}</p>
+                </div>
+          ))
+        }
       </div>
     </div>
   );

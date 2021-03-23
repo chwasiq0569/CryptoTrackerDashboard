@@ -15,7 +15,7 @@ export default function Home({ allCoins, coinHistory }) {
     <div className={styles.outerWrapper}>
       <div className={styles.innerWrapper}>
         <div className={styles.leftSide}>
-          <CryptoList setCoin={setCoin} currencyList={allCoins} />
+          <CryptoList setCoin={setCoin} coin={coin} currencyList={allCoins} />
         </div>
         <div className={styles.middleSection}>
           <DataPlot coin={coin} />

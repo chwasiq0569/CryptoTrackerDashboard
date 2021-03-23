@@ -1,7 +1,7 @@
 .dataPlot_Wrapper{
     width: 100%;
     height: 100%;
-    border: 4px solid blue;
+    border: 3px solid rgba(0, 0, 255, 1);
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
     padding-top: 2rem;
@@ -10,13 +10,14 @@
 .coinDetail{
     width: 100%;
     height: 4rem;
-    /* border: 2px solid red; */
     display: flex;
     padding-left: 3rem;
     padding-right: 3rem;
     border-bottom: 3px solid #37344b;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
+    border: 2px solid red;
+    justify-content: space-between;
 }
 .coinDetail .coinPrice{
     font-size: 2.75rem;
@@ -24,17 +25,19 @@
     font-weight: 500;
     opacity: 1;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 30%;
+    width: auto;
+
 }
 .percentageChange{
-      width: 70%;
+    width: 70%;
     height: 100%;
-    margin-left: 0.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: flex-start;
+    /* margin-left: 0.5rem; */
+    
 }
 .badge{
     width: 4.5rem;
@@ -77,6 +80,7 @@
     padding-right: 3rem;
 }
 .historyTime{
+    cursor: pointer;
     width: 3.5rem;
     height: 2rem;
     background-color: transparent;
@@ -85,10 +89,23 @@
     align-items: center;
     border-radius: 2rem;
     margin-top: 1rem;
-    color: white;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.5s ease;
+}
+.historyTime:hover{
+    background-color: #37344b;
+    color: rgba(255, 255, 255, 1);
 }
 .active{
-
     background-color: white;
     color: black;
+    cursor: pointer;
+    width: 3.5rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
 }
