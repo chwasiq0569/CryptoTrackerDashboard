@@ -59,7 +59,9 @@
  opacity: 1;
 }
 .activeindividualCurrency{
- border-bottom: 3px solid #5b5772;
+  /* border: 2px solid white; */
+ border-top: 3px solid #5b5772;
+ border-bottom: 3px solid #5b5772; 
 }
 .individualCurrency:hover .currencyName,
 .activecurrencyName,
