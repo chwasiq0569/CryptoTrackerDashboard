@@ -36,7 +36,6 @@
     justify-content: flex-end;
     align-items: flex-start;
     /* margin-left: 0.5rem; */
-    
 }
 .badge{
     width: 4.5rem;
@@ -49,6 +48,8 @@
     justify-content: center;
     align-items: center;
     padding: 0.25rem;
+    margin-left: 0.5rem;
+    align-self: flex-start;
 }
 .Btns{
     width: 13rem;
@@ -68,6 +69,7 @@
     align-items: center;
     border-radius: 1.5rem;
     font-size: 0.85rem;
+    cursor: pointer;
 }
 .historyTimeContainer{
     width: 100%;
