@@ -8,6 +8,7 @@ export default function CryptoList({ currencyList, setCoin, coin}){
     const [selectedCoin, setSelectedCoin] = React.useState(coin);
 
     React.useEffect(() => {
+        window.scrollTo(0, 700)
         setSelectedCoin(coin)
     }, [coin])
 

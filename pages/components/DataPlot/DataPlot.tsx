@@ -53,6 +53,8 @@ const DataPlot = ( { coin } ) => {
         fetchData();
     }, [coin, selectedPeriod])
 
+
+    
 const options = {
     scale: {
         angleLines: {
