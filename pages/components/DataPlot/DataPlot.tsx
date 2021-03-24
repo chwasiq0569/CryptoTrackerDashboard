@@ -106,7 +106,7 @@ const options = {
             </div>
         </div>
 
-      <Radar data={data} height={300} options={options} />
+      <Radar data={data} height={250} options={options} />
       <div className={styles.historyTimeContainer}>
         {
           historyPeriod.map((period, i) => (
