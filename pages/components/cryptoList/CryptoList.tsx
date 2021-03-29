@@ -4,9 +4,9 @@ import styles from './CryptoList.module.css';
 
 
 
-export default function CryptoList({ currencyList, setCoin, coin}){
+const CryptoList: React.FC<any> = ({ currencyList, setCoin, coin}) => {
     const [selectedCoin, setSelectedCoin] = React.useState(coin);
-
+    console.log("coin.image", coin.image)
     React.useEffect(() => {
         window.scrollTo(0, 700)
         setSelectedCoin(coin)
@@ -60,3 +60,5 @@ export default function CryptoList({ currencyList, setCoin, coin}){
         </div>
     )
 }
+
+export default CryptoList

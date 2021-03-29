@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 
 // var globalVariable = "";
 
-export default function Home({ allCoins, coinHistory }) {
+export default function Home({ allCoins, coinHistory })  {
   const [coin, setCoin] = useState(allCoins[0]);
 
   console.log("COIN: ", coin)
